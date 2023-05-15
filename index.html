@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Notes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <!-- Bootstrap core CSS -->
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Notes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div class="container"> -->
+  <div class="row">
+    <div class="col-2 bg-dark nav-pills">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#dotNet" data-bs-toggle="tab">DotNet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#clr" data-bs-toggle="tab">CLR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#namespace" data-bs-toggle="tab">Namespace</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#readwrite" data-bs-toggle="tab">Read & Write in Console</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#builtin" data-bs-toggle="tab">BuiltIn Data Types</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#boolean" data-bs-toggle="tab">Boolean Data Type</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#string" data-bs-toggle="tab">String and Char Data Type</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#convert" data-bs-toggle="tab">Data Type Conversion</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-10">
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane container fade" id="dotNet">
+          <h1>Dot Net FrameWork</h1>
+          <p>
+            Dotnet follows a standard if anyLanguage folloows the standard it
+            comes under this.
+          </p>
+          <h5>Applications:</h5>
+          <ol>
+            <li>Windows App</li>
+            <li>Web App</li>
+            <li>Gaming App</li>
+            <li>Mobile App</li>
+          </ol>
+          <br />
+        </div>
+        <div class="tab-pane container fade" id="clr">
+          <h1>CLR</h1>
+          <p>
+            CIL/MSIL file gnerated from compiler CLR(common language runtime)
+            after compile JIT is part of CLR only execute main code(Fast
+            Compile)
+          </p>
+        </div>
+        <div class="tab-pane container fade" id="namespace">
+          <h1>Namespace</h1>
+          <p>
+            Namespace is used to organize the code in a manner(It contains
+            only classes, interfcaes, enum, delegated,struct)
+          </p>
+        </div>
+        <!-- </div> -->
+
+        <div class="tab-pane container fade" id="readwrite">
+          <h1>Reading & Writing in Console</h1>
+          <h4>
+            Q4: Program to display A Number given by User using concatanation
+            and Placeholder Syntax
+          </h4>
+          <code>
+              <pre>
+          using System;
+
+          class ProgramFour
+          {
+            public static void Main()
+            {
+              Console.WriteLine("Enter a Number: ");
+              int a=int.Parse(Console.ReadLine());
+              Console.WriteLine("You have Entered "+a);
+              Console.WriteLine("You have Entered {0}. Using PlaceHolder syntax",a);
+            } 
+          }
+          </pre
+              >
+            </code>
+        </div>
+
+        <div class="tab-pane container fade" id="builtin">
+          <h3>BuiltIn Data Types</h3>
+          <h5>Types of integral DataType:</h5>
+          <ol>
+            <li>ushort</li>
+            <li>short</li>
+            <li>byte</li>
+            <li>sbyte</li>
+            <li>int</li>
+            <li>uint</li>
+            <li>long</li>
+            <li>ulong</li>
+          </ol>
+          <h5>Q5: Program to show Min and Max Value of integral DataType?</h5>
+          <code>
+              <pre>
+          using System;
+
+          public class ProgramFive
+          {
+            public static void Main()
+            {
+              Console.WriteLine("Min value of sbyte : {0} ", sbyte.MinValue);
+              Console.WriteLine("Max value of sbyte : {0} ", sbyte.MaxValue);
+              
+              Console.WriteLine("Min value of byte : {0} ", byte.MinValue);
+              Console.WriteLine("Max value of byte : {0} ", byte.MaxValue);
+            
+              Console.WriteLine("Min value of short : {0} ", short.MinValue);
+              Console.WriteLine("Max value of short : {0} ", short.MaxValue);
+                
+              Console.WriteLine("Min value of ushort : {0} ", ushort.MinValue);
+              Console.WriteLine("Max value of ushort : {0} ", ushort.MaxValue);
+                
+              Console.WriteLine("Min value of int : {0} ", int.MinValue);
+              Console.WriteLine("Max value of int : {0} ", int.MaxValue);
+                
+              Console.WriteLine("Min value of uint : {0} ", uint.MinValue);
+              Console.WriteLine("Max value of uint : {0} ", uint.MaxValue);
+            }
+          }
+          </pre
+              >
+            </code>
+        </div>
+        <div class="tab-pane container fade" id="boolean">
+          <h3>Boolean datatype</h3>
+          <h5>
+            Q6: Program to check the Gratest or smallest of two number using
+            Boolean DatType?
+          </h5>
+          <code>
+              <pre>
+          using System;
+
+          public class ProgramSix
+          {
+            public static void Main()
+            {
+              Console.WriteLine("Enter 1st Number: ");
+              int num1=int.Parse(Console.ReadLine());
+              Console.WriteLine("Enter 2nd Number: ");
+              int num2=int.Parse(Console.ReadLine());
+                
+              bool isGreater=num1>num2;
+              if(isGreater)
+              {
+                Console.WriteLine("The Values of 1st number {0} is greater than 2nd number {1}",num1,num2);
+              }
+              else
+              {
+                Console.WriteLine("The Values of 1st number {0} is smaller than 2nd number {1}",num1,num2);
+              }
+            }
+          }
+          </pre
+              >
+            </code>
+
+          <h3>Float, Decimal, Double</h3>
+          <p>
+            Float takes 4 bytes space and it can take up 8 character of limit
+            in it including dot. We need to use 'f' as suffix (Mandatory)
+          </p>
+          <p>
+            Double takes 8 bytes space and it can take up 16 character of
+            limit in it including dot. We need to use 'd' as suffix(Optional)
+          </p>
+          <p>
+            Decimal takes 16 bytes space and it can take up 32 character of
+            limit in it including dot. We need to use 'm' as suffix(Mandatory)
+          </p>
+          <h5>
+            Q6.1: Program to see the precision in Float, Decimal and Double data
+            Type.
+          </h5>
+          <code>
+              <pre>
+          using System;
+
+          public class ProgramSeven
+          {
+            public static void Main()	
+            {
+              float a=552.94564745f;
+              Console.WriteLine(a);
+    
+              double d=52.945647455294564745d;
+              Console.WriteLine(d);
+    
+              decimal x=52.945647455294564745945647455294564745M;
+              Console.WriteLine(x);
+            }
+          }
+</pre>
+            </code>
+        </div>
+        <div class="tab-pane container fade" id="string">
+          <h1>String</h1>
+          <p>
+            String is made up of Multiple Characters in a Single
+            Variable.(Reference Type) uses Double Quotes
+          </p>
+          <h1>Char</h1>
+          <p>
+            character is a Single Character (Value Type) uses Single Quote
+          </p>
+          <h1>Escape Sequence</h1>
+          <p>
+            Escape Sequence: In Escape Squence with the help of backslash'\'
+            we can skip the upcoming character or insert a new line or give a
+            tag
+          </p>
+          <p>
+            Verbal Literal : In this with the help of '@' will ignore the
+            Escape sequence character in the string.
+          </p>
+          <h5>
+            Q7:Program to illustrate the difference b/w Escape and Verbal
+            Literal.
+          </h5>
+          <code>
+              <pre>
+          using System;
+
+          public class ProgramSeven
+          {
+	          public static void Main()
+            {
+		          Console.WriteLine("\"Welcome to C#\"");
+		          Console.WriteLine("\'Welcome to C#\'");
+		          Console.WriteLine("\\Welcome to C#\\");
+		          Console.WriteLine("\tWelcome to C#");
+		          Console.WriteLine("One \nTwo \nThree");
+		          Console.WriteLine("C:\\Users\\Aman\\Desktop\\Celebal\\CSharp\\Programs\\CSharpNotesWithSaurav");
+		          Console.WriteLine(@"C:\Users\Aman\Desktop\Celebal\CSharp\Programs\CSharpNotesWithSaurav");
+	          }
+          }
+              </pre>
+            </code>
+        </div>
+        <div class="tab-pane container fade" id="convert">
+          <h1>Implicit & Explicit</h1>
+          <p>
+            Implicit the compiler automatically convert from lower data type
+            to upper data type in vice versa provide error.
+          </p>
+          <p>
+            Explicit the compiler does not automatically it need to be Type
+            Caste then we can convert from upper to lower Data loss is their
+            in Explicit Uses Convert class and Parse method we can typecast.
+          </p>
+          <h5>
+            Q8: Program to Demonstrate the Use of Implicit and Explicit
+            Converion Type also by using Parse and convert method.
+          </h5>
+
+          <code>
+              <pre>
+          using System;
+
+          public class ProgramEight
+          {
+	          public static void Main()
+            {
+		          int x=25;
+		          float y=x;
+		          Console.WriteLine("Implicit Convertion From int {0} to float {1} is : {2} Result in No DataLoss",x,y,y);
+
+		          float a=396.856f;
+		          int b=(int)a;
+		          Console.WriteLine("Explicit Convertion From Float {0} to int {1} is : {2} Result in DataLoss",a,b,b);
+
+		          float c=96.78f;
+		          int d=Convert.ToInt32(c);
+		          Console.WriteLine("Using Convert class Convertion From Float {0} to int {1} is : {2} Result in DataLoss",c,d,d);
+
+		          string e="56";
+		          int f=int.Parse(e);
+		          Console.WriteLine("Using Parse class Convertion From string {0} to int {1} is : {2} Result in DataLoss",e,f,f);
+	          }
+          }
+      </pre
+              >
+            </code>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
