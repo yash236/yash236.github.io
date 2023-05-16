@@ -7,6 +7,7 @@
   <title>My Notes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="icon" type="image/x-icon" href="open-book.png">
 
   <!-- <link rel="stylesheet" href="styles.css"> -->
   <!-- Bootstrap core CSS -->
@@ -16,7 +17,9 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Notes</a>
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="" width="80px" height="84px">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,7 +29,7 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item dropdown">
@@ -45,13 +48,13 @@
               </li>
             </ul>
           </li>
-        </ul>
-        <form class="d-flex">
+        </ul> -->
+          <!-- <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">
             Search
           </button>
-        </form>
+        </form> -->
       </div>
     </div>
   </nav>
@@ -92,8 +95,37 @@
         <div class="tab-pane container fade" id="dotNet">
           <h1>Dot Net FrameWork</h1>
           <p>
-            Dotnet follows a standard if anyLanguage folloows the standard it
-            comes under this.
+
+            If any programming language adheres to the standard followed by .NET, it can be considered part of the .NET
+            ecosystem.
+          </p>
+          <p>Certainly! The .NET ecosystem is built upon a set of standards and specifications known as the Common
+            Language Infrastructure (CLI). The CLI defines a common execution environment for programming languages and
+            provides a runtime environment for executing programs.
+          </p>
+          <p>
+            When a programming language follows the CLI standard, it gains compatibility with the .NET framework and can
+            be used to develop applications that target the .NET platform. This means that developers can write code in
+            different languages while still leveraging the capabilities and libraries provided by .NET.
+          </p>
+
+          <p>
+
+            Some popular languages that conform to the CLI standard and can be used within the .NET ecosystem include
+            C#, Visual Basic .NET (VB.NET), and F#. Additionally, there are managed versions of other languages like C++
+            and Python that can also be used with .NET.
+          </p>
+          <p>
+
+            By adhering to the CLI standard, these languages ensure interoperability and enable code sharing between
+            different .NET languages. This allows developers to leverage the strengths of each language while building
+            applications for the .NET platform.
+          </p>
+          <p>
+
+            In summary, any programming language that adheres to the CLI standard can be considered part of the .NET
+            ecosystem, enabling developers to build applications that target the .NET framework using their language of
+            choice.
           </p>
           <h5>Applications:</h5>
           <ol>
@@ -111,18 +143,107 @@
             after compile JIT is part of CLR only execute main code(Fast
             Compile)
           </p>
+
+          <p>
+            The Common Language Runtime (CLR) is a component of the .NET framework that provides a managed execution
+            environment for applications. When a program is compiled, the compiler generates an intermediate language
+            representation called Common Intermediate Language (CIL) or Microsoft Intermediate Language (MSIL).
+
+          </p>
+          <p>
+
+            After compilation, the CIL/MSIL code is not directly executed by the hardware or operating system. Instead,
+            it is executed by the CLR. The CLR is responsible for loading and executing the CIL/MSIL code. It provides
+            services such as memory management, exception handling, security, and garbage collection.
+          </p>
+          <p>
+
+            When the CIL/MSIL code is executed, the Just-In-Time (JIT) compiler of the CLR dynamically compiles the
+            CIL/MSIL code into machine code specific to the target platform. This compilation happens at runtime, just
+            before the code is executed. The JIT compiler optimizes the code for better performance and generates native
+            machine code that can be executed directly by the hardware.
+          </p>
+
+          <p>
+
+            The JIT compilation process allows for faster startup times and efficient execution of the code. It compiles
+            only the portions of the code that are actually executed, which is known as "just-in-time" compilation.
+          </p>
+          <p>
+
+            To summarize, the CLR executes the CIL/MSIL code generated by the compiler. The JIT compiler within the CLR
+            dynamically compiles the CIL/MSIL into machine code at runtime, optimizing it for performance. This
+            combination of the CLR and JIT compilation enables the execution of managed code in a platform-independent
+            manner while providing performance benefits.
+          </p>
+
         </div>
         <div class="tab-pane container fade" id="namespace">
           <h1>Namespace</h1>
           <p>
-            Namespace is used to organize the code in a manner(It contains
-            only classes, interfcaes, enum, delegated,struct)
+            A namespace is used to organize code in a structured manner. It contains classes, interfaces, enums,
+            delegates, and structs.
+          </p>
+          <p>
+
+            A namespace in programming is a way to organize code elements such as classes, interfaces, enums, delegates,
+            and structs into logical groups. It provides a hierarchical structure to prevent naming conflicts and helps
+            in maintaining code readability and organization.
+          </p>
+
+          <p>
+            By placing related code elements within a namespace, you can group them based on their functionality,
+            purpose, or module. This allows you to have multiple code elements with the same name, as long as they are
+            in different namespaces.
+          </p>
+
+          <p>
+            Namespaces also provide a level of encapsulation, as code elements within a namespace are not directly
+            accessible outside of it unless explicitly specified. This helps in managing the visibility and
+            accessibility of code elements within a project or application.
+
+          </p>
+
+          <p>
+            Using namespaces, you can reference and access code elements by specifying the fully qualified name, which
+            includes both the namespace and the code element name. This ensures clarity and avoids ambiguity when
+            referring to specific code element
           </p>
         </div>
         <!-- </div> -->
 
         <div class="tab-pane container fade" id="readwrite">
           <h1>Reading & Writing in Console</h1>
+          <p>
+            In C#, you can read and write input/output to the console using the Console class.
+          </p>
+          <p>
+
+            To write output to the console, you can use the Console.Write() or Console.WriteLine() methods.
+            Console.Write() writes the specified value to the console without a newline character at the end, while
+            Console.WriteLine() writes the specified value to the console followed by a newline character.
+          </p>
+          <code>
+  <pre>
+    // Writing output to the console
+    Console.Write("Hello ");
+    Console.WriteLine("World");
+    
+  </pre>
+</code>
+          <p>
+            To read input from the console, you can use the Console.ReadLine() method. This method reads the next line
+            of characters from the console and returns it as a string.
+          </p>
+          <code>
+  <pre>
+    // Reading input from the console
+    Console.Write("Enter your name: ");
+    string name = Console.ReadLine();
+    Console.WriteLine("Hello, " + name);
+
+  </pre>
+</code>
           <h4>
             Q4: Program to display A Number given by User using concatanation
             and Placeholder Syntax
