@@ -1049,6 +1049,155 @@
           </div>
         </div>
 
+
+
+        <div class="tab-pane container fade" id="ternary">
+          <h1>Ternary & Conditional Operator
+          </h1>
+          <div class="container">
+            <h5> Q17: Program to display the Concept of Increment/Decrement Operator
+              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
+            </h5>
+            <div class="card " id="read">
+              <div class="card-body">
+                <pre><code>
+        using System;
+
+        class ProgramFour
+        {
+          public static void Main()
+          {
+            Console.WriteLine("Enter your Age:");
+		int a = int.Parse(Console.ReadLine());
+		if(a>=18){
+			Console.WriteLine("You are Eligible for giving Vote");
+		}
+		else{
+			Console.WriteLine("You are not Eligible for giving Vote");
+		}
+
+		string EligibleToVote=a>=18?"You are eligible for vote":"Not Eligible";
+		Console.WriteLine(EligibleToVote);
+          } 
+        }
+            </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="tab-pane container fade" id="precedence">
+          <h1>Precedence of Operator
+          </h1>
+            <p>
+              8/2-3+2*2 => 
+              4-3+4(left to right if same precedence)  =>
+              1+4=5
+            </p>
+              <p>
+                high->bracket()
+                  / *
+                low->+-
+              </p>
+        </div>
+
+
+
+        <div class="tab-pane container fade" id="selection">
+          <h1>Selection Statement
+            (Simple if)
+          </h1>
+          <div class="container">
+            <h5> Q19: Program to display the Concept of Selection Statement.
+              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
+            </h5>
+            <div class="card " id="read">
+              <div class="card-body">
+                <pre><code>
+        using System;
+
+        class ProgramFour
+        {
+          public static void Main()
+          {
+            Console.WriteLine("Enter UserName:");
+		string user=Console.ReadLine();
+		Console.WriteLine("Enter a Password:");
+		string pass=Console.ReadLine();
+		if(user=="amangn12" && pass=="1234"){
+			Console.WriteLine("Login Successfull");
+		}
+		else{
+			Console.WriteLine("Please Try Again");
+		}
+          } 
+        }
+            </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane container fade" id="ifelse">
+          <h1>If else if
+          </h1>
+          <div class="container">
+            <h5> Q19: Program to display the Concept of if else if.
+              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
+            </h5>
+            <div class="card " id="read">
+              <div class="card-body">
+                <pre><code>
+        using System;
+
+        class ProgramFour
+        {
+          public static void Main()
+          {
+            Console.WriteLine("Enter your Percentage:");
+		int percent=int.Parse(Console.ReadLine());
+		if(percent>=90){
+			Console.WriteLine("A+");
+		}
+		else if(percent>=80){
+			Console.WriteLine("B+");
+		}
+		else if(percent>=70){
+			Console.WriteLine("C+");
+		}
+		else if(percent>=60){
+			Console.WriteLine("D+");
+		}
+		else if(percent>=50){
+			Console.WriteLine("E+");
+		}
+		else if(percent>=40){
+			Console.WriteLine("F+");
+		}
+		else{
+			Console.WriteLine("Fail");
+		}
+          } 
+        }
+            </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
       </div>
     </div>
   </div>
