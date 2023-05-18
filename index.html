@@ -8,17 +8,28 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
   <link rel="icon" type="image/x-icon" href="open-book.png">
+  <link rel="stylesheet" href="style.css">
 
   <!-- <link rel="stylesheet" href="styles.css"> -->
   <!-- Bootstrap core CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,200;1,400&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,200;0,400;1,200;1,400&family=Pacifico&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" alt="" width="80px" height="84px">
+      <a class="navbar-brand" href="index.html">
+        <img src="mylogo.png" alt="" class="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,9 +37,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">My Notes</a>
+          </li> -->
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
@@ -59,12 +70,16 @@
     </div>
   </nav>
 
+
+
+
+
   <!-- <div class="container"> -->
   <div class="row">
-    <div class="col-2 bg-dark nav-pills">
+    <div class="col-2 bg-dark nav-pills" style="height: 100vh; overflow-y: scroll;">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link link-secondary" href="#dotNet" data-bs-toggle="tab">DotNet</a>
+          <a class="nav-link link-secondary active" href="#dotNet" data-bs-toggle="tab">DotNet</a>
         </li>
         <li class="nav-item">
           <a class="nav-link link-secondary" href="#clr" data-bs-toggle="tab">CLR</a>
@@ -87,128 +102,165 @@
         <li class="">
           <a class="nav-link link-secondary" href="#convert" data-bs-toggle="tab">Data Type Conversion</a>
         </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#constant" data-bs-toggle="tab">Constants</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#datetime" data-bs-toggle="tab">Standard Date Time Format</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#statement" data-bs-toggle="tab">Statements</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#arithmetic" data-bs-toggle="tab">Arithmetic</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#relational" data-bs-toggle="tab">Relational</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#logical" data-bs-toggle="tab">Logical</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#assignment" data-bs-toggle="tab">Assignment</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#inc" data-bs-toggle="tab">Increment/Decrement Operator</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#ternary" data-bs-toggle="tab">Ternary & Conditional Operator</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#precedence" data-bs-toggle="tab">Precedence Operator</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#selection" data-bs-toggle="tab">Selection Statements</a>
+        </li>
+        <li class="">
+          <a class="nav-link link-secondary" href="#ifelse" data-bs-toggle="tab"> If else if</a>
+        </li>
       </ul>
     </div>
+
     <div class="col-10">
       <!-- Tab panes -->
       <div class="tab-content">
-        <div class="tab-pane container fade" id="dotNet">
-          <h1>Dot Net FrameWork</h1>
-          <p>
 
-            If any programming language adheres to the standard followed by .NET, it can be considered part of the .NET
-            ecosystem.
-          </p>
-          <p>Certainly! The .NET ecosystem is built upon a set of standards and specifications known as the Common
-            Language Infrastructure (CLI). The CLI defines a common execution environment for programming languages and
-            provides a runtime environment for executing programs.
-          </p>
-          <p>
-            When a programming language follows the CLI standard, it gains compatibility with the .NET framework and can
-            be used to develop applications that target the .NET platform. This means that developers can write code in
-            different languages while still leveraging the capabilities and libraries provided by .NET.
-          </p>
+        <div class="tab-pane container  active" id="dotNet">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h1>Dot Net Framework</h1>
+                <p>
+                  If any programming language adheres to the standard followed by .NET, it can be considered part of the
+                  .NET ecosystem.
+                </p>
+                <p>
+                  The two major components of .NET Framework are the Common Language Runtime and the .NET Framework
+                  Class Library.
+                </p>
+                <ul>
+                  <li>The Common Language Runtime (CLR) is the execution engine that handles running applications. It
+                    provides services like thread management, garbage collection, type-safety, exception handling, and
+                    more.</li>
+                  <li>The Class Library provides a set of APIs and types for common functionality. It provides types for
+                    strings, dates, numbers, etc. The Class Library includes APIs for reading and writing files,
+                    connecting to databases, drawing, and more.</li>
+                </ul>
+                <p>
+                  When a programming language follows the CLI standard, it gains compatibility with the .NET framework
+                  and can be used to develop applications that target the .NET platform. This means that developers can
+                  write code in different languages while still leveraging the capabilities and libraries provided by
+                  .NET.
+                </p>
+                <p>
+                  .NET applications are written in the C#, F#, or Visual Basic programming language. Code is compiled
+                  into a language-agnostic Common Intermediate Language (CIL). Compiled code is stored in
+                  assemblies—files with a .dll or .exe file extension.
+                </p>
 
-          <p>
-
-            Some popular languages that conform to the CLI standard and can be used within the .NET ecosystem include
-            C#, Visual Basic .NET (VB.NET), and F#. Additionally, there are managed versions of other languages like C++
-            and Python that can also be used with .NET.
-          </p>
-          <p>
-
-            By adhering to the CLI standard, these languages ensure interoperability and enable code sharing between
-            different .NET languages. This allows developers to leverage the strengths of each language while building
-            applications for the .NET platform.
-          </p>
-          <p>
-
-            In summary, any programming language that adheres to the CLI standard can be considered part of the .NET
-            ecosystem, enabling developers to build applications that target the .NET framework using their language of
-            choice.
-          </p>
-          <h5>Applications:</h5>
-          <ol>
-            <li>Windows App</li>
-            <li>Web App</li>
-            <li>Gaming App</li>
-            <li>Mobile App</li>
-          </ol>
-          <br />
+                <h5>Applications:</h5>
+                <ol>
+                  <li>Windows App</li>
+                  <li>Web App</li>
+                  <li>Gaming App</li>
+                  <li>Mobile App</li>
+                </ol>
+              </div>
+              <div class="col-md-6">
+                <img src="dotnet.svg" alt="Dot Net Framework" class="img-fluid">
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane container fade" id="clr">
-          <h1>CLR</h1>
-          <p>
-            CIL/MSIL file gnerated from compiler CLR(common language runtime)
-            after compile JIT is part of CLR only execute main code(Fast
-            Compile)
-          </p>
-
-          <p>
-            The Common Language Runtime (CLR) is a component of the .NET framework that provides a managed execution
-            environment for applications. When a program is compiled, the compiler generates an intermediate language
-            representation called Common Intermediate Language (CIL) or Microsoft Intermediate Language (MSIL).
-
-          </p>
-          <p>
-
-            After compilation, the CIL/MSIL code is not directly executed by the hardware or operating system. Instead,
-            it is executed by the CLR. The CLR is responsible for loading and executing the CIL/MSIL code. It provides
-            services such as memory management, exception handling, security, and garbage collection.
-          </p>
-          <p>
-
-            When the CIL/MSIL code is executed, the Just-In-Time (JIT) compiler of the CLR dynamically compiles the
-            CIL/MSIL code into machine code specific to the target platform. This compilation happens at runtime, just
-            before the code is executed. The JIT compiler optimizes the code for better performance and generates native
-            machine code that can be executed directly by the hardware.
-          </p>
-
-          <p>
-
-            The JIT compilation process allows for faster startup times and efficient execution of the code. It compiles
-            only the portions of the code that are actually executed, which is known as "just-in-time" compilation.
-          </p>
-          <p>
-
-            To summarize, the CLR executes the CIL/MSIL code generated by the compiler. The JIT compiler within the CLR
-            dynamically compiles the CIL/MSIL into machine code at runtime, optimizing it for performance. This
-            combination of the CLR and JIT compilation enables the execution of managed code in a platform-independent
-            manner while providing performance benefits.
-          </p>
-
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h1>CLR</h1>
+                <p>
+                  CIL/MSIL file generated from compiler CLR (Common Language Runtime) after compile JIT is part of CLR
+                  only execute main code (Fast Compile).
+                </p>
+                <p>
+                  The Common Language Runtime (CLR) is a component of the .NET framework that provides a managed
+                  execution environment for applications. When a program is compiled, the compiler generates an
+                  intermediate language representation called Common Intermediate Language (CIL) or Microsoft
+                  Intermediate Language (MSIL).
+                </p>
+                <p>
+                  After compilation, the CIL/MSIL code is not directly executed by the hardware or operating system.
+                  Instead, it is executed by the CLR. The CLR is responsible for loading and executing the CIL/MSIL
+                  code. It provides services such as memory management, exception handling, security, and garbage
+                  collection.
+                </p>
+                <p>
+                  When the CIL/MSIL code is executed, the Just-In-Time (JIT) compiler of the CLR dynamically compiles
+                  the CIL/MSIL code into machine code specific to the target platform. This compilation happens at
+                  runtime, just before the code is executed. The JIT compiler optimizes the code for better performance
+                  and generates native machine code that can be executed directly by the hardware.
+                </p>
+                <p>
+                  The JIT compilation process allows for faster startup times and efficient execution of the code. It
+                  compiles only the portions of the code that are actually executed, which is known as "just-in-time"
+                  compilation.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <img src="jit.jpg" alt="JIT Compiler" class="img-fluid">
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane container fade" id="namespace">
           <h1>Namespace</h1>
           <p>
-            A namespace is used to organize code in a structured manner. It contains classes, interfaces, enums,
-            delegates, and structs.
-          </p>
-          <p>
+          <ul>
+            <li>A namespace is used to organize code in a structured manner. It contains classes, interfaces, enums,
+              delegates, and structs.</li>
+            <li>A namespace in programming is a way to organize code elements such as classes, interfaces, enums,
+              delegates,
+              and structs into logical groups. It provides a hierarchical structure to prevent naming conflicts and
+              helps
+              in maintaining code readability and organization.</li>
+            <li>
+              By placing related code elements within a namespace, you can group them based on their functionality,
+              purpose, or module. This allows you to have multiple code elements with the same name, as long as they are
+              in different namespaces.
+            </li>
+            <li>
+              Namespaces also provide a level of encapsulation, as code elements within a namespace are not directly
+              accessible outside of it unless explicitly specified. This helps in managing the visibility and
+              accessibility of code elements within a project or application.
+            </li>
+            <li>
+              Using namespaces, you can reference and access code elements by specifying the fully qualified name, which
+              includes both the namespace and the code element name. This ensures clarity and avoids ambiguity when
+              referring to specific code element
+            </li>
+          </ul>
 
-            A namespace in programming is a way to organize code elements such as classes, interfaces, enums, delegates,
-            and structs into logical groups. It provides a hierarchical structure to prevent naming conflicts and helps
-            in maintaining code readability and organization.
           </p>
 
-          <p>
-            By placing related code elements within a namespace, you can group them based on their functionality,
-            purpose, or module. This allows you to have multiple code elements with the same name, as long as they are
-            in different namespaces.
-          </p>
-
-          <p>
-            Namespaces also provide a level of encapsulation, as code elements within a namespace are not directly
-            accessible outside of it unless explicitly specified. This helps in managing the visibility and
-            accessibility of code elements within a project or application.
-
-          </p>
-
-          <p>
-            Using namespaces, you can reference and access code elements by specifying the fully qualified name, which
-            includes both the namespace and the code element name. This ensures clarity and avoids ambiguity when
-            referring to specific code element
-          </p>
         </div>
         <!-- </div> -->
         <div class="tab-pane container fade" id="readwrite">
@@ -243,31 +295,38 @@
 
   </pre>
 </code>
-          <h4>
-            Q4: Program to display A Number given by User using concatanation
-            and Placeholder Syntax
-          </h4>
-          <code>
-              <pre>
-          using System;
 
-          class ProgramFour
+          <div class="container">
+            <h5> Q4: Program to display A Number given by User using concatanation
+              and Placeholder Syntax
+              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
+            </h5>
+            <div class="card collapse" id="read">
+              <div class="card-body">
+                <pre><code>
+        using System;
+
+        class ProgramFour
+        {
+          public static void Main()
           {
-            public static void Main()
-            {
-              Console.WriteLine("Enter a Number: ");
-              int a=int.Parse(Console.ReadLine());
-              Console.WriteLine("You have Entered "+a);
-              Console.WriteLine("You have Entered {0}. Using PlaceHolder syntax",a);
-            } 
-          }
-          </pre
-              >
-            </code>
+            Console.WriteLine("Enter a Number: ");
+            int a=int.Parse(Console.ReadLine());
+            Console.WriteLine("You have Entered "+a);
+            Console.WriteLine("You have Entered {0}. Using PlaceHolder syntax",a);
+          } 
+        }
+            </code></pre>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
 
         <div class="tab-pane container fade" id="builtin">
-          <h3>BuiltIn Data Types</h3>
+          <h1>BuiltIn Data Types</h1>
           <h5>Types of integral DataType:</h5>
           <ol>
             <li>ushort</li>
@@ -279,71 +338,101 @@
             <li>long</li>
             <li>ulong</li>
           </ol>
-          <h5>Q5: Program to show Min and Max Value of integral DataType?</h5>
-          <code>
-              <pre>
-          using System;
 
-          public class ProgramFive
-          {
-            public static void Main()
-            {
-              Console.WriteLine("Min value of sbyte : {0} ", sbyte.MinValue);
-              Console.WriteLine("Max value of sbyte : {0} ", sbyte.MaxValue);
-              
-              Console.WriteLine("Min value of byte : {0} ", byte.MinValue);
-              Console.WriteLine("Max value of byte : {0} ", byte.MaxValue);
-            
-              Console.WriteLine("Min value of short : {0} ", short.MinValue);
-              Console.WriteLine("Max value of short : {0} ", short.MaxValue);
-                
-              Console.WriteLine("Min value of ushort : {0} ", ushort.MinValue);
-              Console.WriteLine("Max value of ushort : {0} ", ushort.MaxValue);
-                
-              Console.WriteLine("Min value of int : {0} ", int.MinValue);
-              Console.WriteLine("Max value of int : {0} ", int.MaxValue);
-                
-              Console.WriteLine("Min value of uint : {0} ", uint.MinValue);
-              Console.WriteLine("Max value of uint : {0} ", uint.MaxValue);
-            }
-          }
-          </pre
-              >
-            </code>
+
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title">Q5: Program to show Min and Max Value of integral DataType?
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                        using System;
+
+                        public class ProgramFive
+                        {
+                          public static void Main()
+                          {
+                            Console.WriteLine("Min value of sbyte : {0} ", sbyte.MinValue);
+                            Console.WriteLine("Max value of sbyte : {0} ", sbyte.MaxValue);
+                            
+                            Console.WriteLine("Min value of byte : {0} ", byte.MinValue);
+                            Console.WriteLine("Max value of byte : {0} ", byte.MaxValue);
+                          
+                            Console.WriteLine("Min value of short : {0} ", short.MinValue);
+                            Console.WriteLine("Max value of short : {0} ", short.MaxValue);
+                              
+                            Console.WriteLine("Min value of ushort : {0} ", ushort.MinValue);
+                            Console.WriteLine("Max value of ushort : {0} ", ushort.MaxValue);
+                              
+                            Console.WriteLine("Min value of int : {0} ", int.MinValue);
+                            Console.WriteLine("Max value of int : {0} ", int.MaxValue);
+                              
+                            Console.WriteLine("Min value of uint : {0} ", uint.MinValue);
+                            Console.WriteLine("Max value of uint : {0} ", uint.MaxValue);
+                          }
+                        }
+                          </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
         </div>
         <div class="tab-pane container fade" id="boolean">
-          <h3>Boolean datatype</h3>
-          <h5>
-            Q6: Program to check the Gratest or smallest of two number using
-            Boolean DatType?
-          </h5>
-          <code>
-              <pre>
-          using System;
+          <h1>Boolean datatype</h1>
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title"> Q6: Program to check the Gratest or smallest of two number using
+                  Boolean DatType?
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                        using System;
 
-          public class ProgramSix
-          {
-            public static void Main()
-            {
-              Console.WriteLine("Enter 1st Number: ");
-              int num1=int.Parse(Console.ReadLine());
-              Console.WriteLine("Enter 2nd Number: ");
-              int num2=int.Parse(Console.ReadLine());
-                
-              bool isGreater=num1>num2;
-              if(isGreater)
-              {
-                Console.WriteLine("The Values of 1st number {0} is greater than 2nd number {1}",num1,num2);
-              }
-              else
-              {
-                Console.WriteLine("The Values of 1st number {0} is smaller than 2nd number {1}",num1,num2);
-              }
-            }
-          }
-          </pre
-              >
-            </code>
+                        public class ProgramSix
+                        {
+                          public static void Main()
+                          {
+                            Console.WriteLine("Enter 1st Number: ");
+                            int num1=int.Parse(Console.ReadLine());
+                            Console.WriteLine("Enter 2nd Number: ");
+                            int num2=int.Parse(Console.ReadLine());
+                              
+                            bool isGreater=num1>num2;
+                            if(isGreater)
+                            {
+                              Console.WriteLine("The Values of 1st number {0} is greater than 2nd number {1}",num1,num2);
+                            }
+                            else
+                            {
+                              Console.WriteLine("The Values of 1st number {0} is smaller than 2nd number {1}",num1,num2);
+                            }
+                          }
+                        }
+                          </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
 
           <h3>Float, Decimal, Double</h3>
           <p>
@@ -358,30 +447,48 @@
             Decimal takes 16 bytes space and it can take up 32 character of
             limit in it including dot. We need to use 'm' as suffix(Mandatory)
           </p>
-          <h5>
-            Q6.1: Program to see the precision in Float, Decimal and Double data
-            Type.
-          </h5>
-          <code>
-              <pre>
-          using System;
 
-          public class ProgramSeven
-          {
-            public static void Main()	
-            {
-              float a=552.94564745f;
-              Console.WriteLine(a);
-    
-              double d=52.945647455294564745d;
-              Console.WriteLine(d);
-    
-              decimal x=52.945647455294564745945647455294564745M;
-              Console.WriteLine(x);
-            }
-          }
-</pre>
-            </code>
+
+
+
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title"> Q6.1: Program to see the precision in Float, Decimal and Double data
+                  Type.
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                        using System;
+
+                        public class ProgramSeven
+                        {
+                          public static void Main()	
+                          {
+                            float a=552.94564745f;
+                            Console.WriteLine(a);
+                  
+                            double d=52.945647455294564745d;
+                            Console.WriteLine(d);
+                  
+                            decimal x=52.945647455294564745945647455294564745M;
+                            Console.WriteLine(x);
+                          }
+                        }
+                          </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
         </div>
         <div class="tab-pane container fade" id="string">
           <h1>String</h1>
@@ -403,29 +510,42 @@
             Verbal Literal : In this with the help of '@' will ignore the
             Escape sequence character in the string.
           </p>
-          <h5>
-            Q7:Program to illustrate the difference b/w Escape and Verbal
-            Literal.
-          </h5>
-          <code>
-              <pre>
-          using System;
 
-          public class ProgramSeven
-          {
-	          public static void Main()
-            {
-		          Console.WriteLine("\"Welcome to C#\"");
-		          Console.WriteLine("\'Welcome to C#\'");
-		          Console.WriteLine("\\Welcome to C#\\");
-		          Console.WriteLine("\tWelcome to C#");
-		          Console.WriteLine("One \nTwo \nThree");
-		          Console.WriteLine("C:\\Users\\Aman\\Desktop\\Celebal\\CSharp\\Programs\\CSharpNotesWithSaurav");
-		          Console.WriteLine(@"C:\Users\Aman\Desktop\Celebal\CSharp\Programs\CSharpNotesWithSaurav");
-	          }
-          }
-              </pre>
-            </code>
+
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title"> Q7:Program to illustrate the difference b/w Escape and Verbal
+                  Literal.
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                        using System;
+
+                        public class ProgramSeven
+                        {
+                          public static void Main()
+                          {
+                            Console.WriteLine("\"Welcome to C#\"");
+                            Console.WriteLine("\'Welcome to C#\'");
+                            Console.WriteLine("\\Welcome to C#\\");
+                            Console.WriteLine("\tWelcome to C#");
+                            Console.WriteLine("One \nTwo \nThree");
+                            Console.WriteLine("C:\\Users\\Aman\\Desktop\\Celebal\\CSharp\\Programs\\CSharpNotesWithSaurav");
+                            Console.WriteLine(@"C:\Users\Aman\Desktop\Celebal\CSharp\Programs\CSharpNotesWithSaurav");
+                          }
+                        }
+                          </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
         </div>
         <div class="tab-pane container fade" id="convert">
           <h1>Implicit & Explicit</h1>
@@ -438,48 +558,513 @@
             Caste then we can convert from upper to lower Data loss is their
             in Explicit Uses Convert class and Parse method we can typecast.
           </p>
-          <h5>
-            Q8: Program to Demonstrate the Use of Implicit and Explicit
-            Converion Type also by using Parse and convert method.
-          </h5>
 
-          <code>
-              <pre>
-          using System;
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title"> Q8: Program to Demonstrate the Use of Implicit and Explicit
+                  Converion Type also by using Parse and convert method.
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                        using System;
 
-          public class ProgramEight
-          {
-	          public static void Main()
-            {
-		          int x=25;
-		          float y=x;
-		          Console.WriteLine("Implicit Convertion From int {0} to float {1} is : {2} Result in No DataLoss",x,y,y);
+                        public class ProgramEight
+                        {
+                          public static void Main()
+                          {
+                            int x=25;
+                            float y=x;
+                            Console.WriteLine("Implicit Convertion From int {0} to float {1} is : {2} Result in No DataLoss",x,y,y);
+              
+                            float a=396.856f;
+                            int b=(int)a;
+                            Console.WriteLine("Explicit Convertion From Float {0} to int {1} is : {2} Result in DataLoss",a,b,b);
+              
+                            float c=96.78f;
+                            int d=Convert.ToInt32(c);
+                            Console.WriteLine("Using Convert class Convertion From Float {0} to int {1} is : {2} Result in DataLoss",c,d,d);
+              
+                            string e="56";
+                            int f=int.Parse(e);
+                            Console.WriteLine("Using Parse class Convertion From string {0} to int {1} is : {2} Result in DataLoss",e,f,f);
+                          }
+                        }
+                        
+                          </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
 
-		          float a=396.856f;
-		          int b=(int)a;
-		          Console.WriteLine("Explicit Convertion From Float {0} to int {1} is : {2} Result in DataLoss",a,b,b);
 
-		          float c=96.78f;
-		          int d=Convert.ToInt32(c);
-		          Console.WriteLine("Using Convert class Convertion From Float {0} to int {1} is : {2} Result in DataLoss",c,d,d);
 
-		          string e="56";
-		          int f=int.Parse(e);
-		          Console.WriteLine("Using Parse class Convertion From string {0} to int {1} is : {2} Result in DataLoss",e,f,f);
-	          }
-          }
-      </pre>
-            </code>
+
+
+
         </div>
+
+        <div class="tab-pane container fade" id="constant">
+          <h1>Constants</h1>
+          <p>
+            We can make any data type constant using const Keyword(value type only)
+          </p>
+          <p>
+            Its Value cannot be changed
+          </p>
+          <p>
+            We can use Access specifier with const keyword also
+          </p>
+
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title"> Q9: Program to demonstrate the Const keyword use.
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                        using System;
+                        public class ProgramNine
+                        {
+                          public static void Main()
+                          {
+                            const double pi=3.14;
+                            int r=2;
+                            Console.WriteLine("Area of Circle with radius {0} is :{1}",r,pi*r*r);
+                          } 
+                        }
+                        
+                          </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+        <div class="tab-pane container fade" id="datetime">
+          <h1>
+            Standard Date Time format Specifier
+          </h1>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Code</th>
+                <th scope="col">Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>DateTime.Now.ToString("MM/dd/yyyy")</td>
+                <td>05/29/2015</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>DateTime.Now.ToString("dddd, dd MMMM yyyy")</td>
+                <td>Friday, 29 May 2015</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>DateTime.Now.ToString("dddd, dd MMMM yyyy")</td>
+                <td>Friday, 29 May 2015 05:50</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>DateTime.Now.ToString("dddd, dd MMMM yyyy")</td>
+                <td>Friday, 29 May 2015 05:50</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>DateTime.Now.ToString("dddd, dd MMMM yyyy")</td>
+                <td>Friday, 29 May 2015 05:50 AM</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss")</td>
+                <td>Friday, 29 May 2015 05:50:06</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>DateTime.Now.ToString("MM/dd/yyyy HH:mm")</td>
+                <td>05/29/2015 05:50</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>DateTime.Now.ToString("MM/dd/yyyy hh:mm tt")</td>
+                <td>05/29/2015 05:50 AM</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>DateTime.Now.ToString("MM/dd/yyyy H:mm")</td>
+                <td>05/29/2015 5:50</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>
+                  DateTime.Now.ToString("MM/dd/yyyy h:mm tt") </td>
+                <td>05/29/2015 5:50 AM</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss")</td>
+                <td>05/29/2015 05:50:06</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>DateTime.Now.ToString("MMMM dd")</td>
+                <td>May 29</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>DateTime.Now.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")</td>
+                <td>2015-05-16T05:50:06.7199222-04:00</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>DateTime.Now.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")</td>
+                <td>Fri, 16 May 2015 05:50:06 GMT</td>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td>DateTime.Now.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")</td>
+                <td>2015-05-16T05:50:06</td>
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td>DateTime.Now.ToString("HH:mm")</td>
+                <td>05:50</td>
+              </tr>
+              <tr>
+                <th scope="row">16</th>
+                <td>DateTime.Now.ToString("hh:mm tt")</td>
+                <td>05:50 AM</td>
+              </tr>
+              <tr>
+                <th scope="row">17</th>
+                <td>DateTime.Now.ToString("H:mm")</td>
+                <td>5:50</td>
+              </tr>
+              <tr>
+                <th scope="row">18</th>
+                <td>DateTime.Now.ToString("h:mm tt")</td>
+                <td>5:50 AM</td>
+              </tr>
+              <tr>
+                <th scope="row">19</th>
+                <td>DateTime.Now.ToString("HH:mm:ss")</td>
+                <td>05:50:06</td>
+              </tr>
+              <tr>
+                <th scope="row">20</th>
+                <td>DateTime.Now.ToString("yyyy MMMM")</td>
+                <td>F2015 May</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title"> Q10: Program to demonstrate the use of Date Time Format
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                            using System;
+                            public class ProgramTen
+                            {
+                              public static void Main()
+                              {
+                                Console.WriteLine("{0:dd}",dt);
+                                DateTime dt=DateTime.Now;
+                                Console.WriteLine("{0:dd-MMM-yyyy:mmm}",dt);
+                                Console.WriteLine("{0:MMM}",dt);//month
+            
+                              }
+                            }
+                            
+                              </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+        <div class="tab-pane container fade" id="statement">
+          <h1>Statements</h1>
+          <p>
+            Logical group of variable / operator is called statemenmt.
+            Multiple Statements are grouped then make a Block.
+
+            Operator and operator together make an expression (x+y) x+=y a===b
+
+            There are 7 Types of Operator.
+          </p>
+        </div>
+
+
+
+        <div class="tab-pane container fade" id="arithmetic">
+          <h1>Arithmetic</h1>
+          <p>Signs used in Arithmetic Operators are: +,-,*,/,=,%</p>
+
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title">Q12: Program to demonstrate the use of Arithmetic Operator.
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+            using System;
+
+            public static void Main()
+            {
+              public class ProgramTwelve
+              {
+                o=a+b;
+                int a=2,b=6,o,p,q,r,s;
+                q=a*b;
+                p=a-b;
+                s=a%b;
+                r=a/b;
+                Console.WriteLine("Diff of a {0} and b {1} is : {2}",a,b,p);
+                Console.WriteLine("Sum of a {0} and b {1} is : {2}",a,b,o);
+                Console.WriteLine("Division of a {0} and b {1} is : {2}",a,b,r);
+                Console.WriteLine("Multiplication of a {0} and b {1} is : {2}",a,b,q);
+                Console.WriteLine("Modulus of a {0} and b {1} is : {2}",a,b,s);
+              }
+            }
+            
+              </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="tab-pane container fade" id="relational">
+          <h1>Relational</h1>
+          <p>Signs used in Relational Operators are: !,==,&lt;,>, &lt;=, >=,!=,===</p>
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title">Q13: Program to demonstrate the use of Relational Operator.
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                      using System;
+
+                      public static void Main()
+                      {
+                        public class ProgramTwelve
+                        {
+                          Console.WriteLine("Enter 1st Number:");
+                          int a=int.Parse(Console.ReadLine());
+                          Console.WriteLine("Enter 2nd Number:");
+                          int b=int.Parse(Console.ReadLine());
+                          if(a>b){
+                            Console.WriteLine("1st value {0} is Greater than 2nd value {1}",a,b);
+                          }
+                          else if(a&lt; b){
+                            Console.WriteLine("1st value {0} is Lesser than 2nd value {1}",a,b);
+                          }
+                          else{
+                            Console.WriteLine("1st value {0} is Equal to 2nd value {1}",a,b);
+                          }
+                      
+                        }
+                      }
+                      
+                        </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane container fade" id="logical">
+          <h1>Logical Operator</h1>
+          <p>Signs used in Logical Operators are: &,|, &&, ||</p>
+
+
+
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title">Q14: Program to demonstrate the use of Logical Operator.
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                      using System;
+                
+                          public static void Main()
+                          {
+                            public class ProgramTwelve
+                            {
+                              Console.WriteLine("Enter 1st Number:");
+                              Console.WriteLine("Enter 2nd Number:");
+                              int a=int.Parse(Console.ReadLine());
+                              Console.WriteLine("Enter 3rd Number:");
+                              int b=int.Parse(Console.ReadLine());
+                              if(a>b && a>c){
+                                Console.WriteLine("1st value {0} is Greater",a);
+                                int c=int.Parse(Console.ReadLine());
+                              }
+                              else if(b>a && b>c){
+                                Console.WriteLine("2nd value {0} is greater",b);
+                              }
+                              else{
+                                Console.WriteLine("3rd value {0} is greater",c);
+                              }
+                              
+                            }
+                          }
+                        </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+        <div class="tab-pane container fade" id="assignment">
+          <h1>Assignment Operator</h1>
+
+
+
+          <div class="container">
+            <div class="card custom-card">
+              <div class="card-body">
+                <h5 class="card-title">Q15: Program to demonstrate the use of Arithmetic Operator.
+                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
+                </h5>
+                <form>
+                  <div class="form-group">
+                    <label for="code">Code:</label>
+                    <pre><code class="language-sharp" id="code">
+                      using System;
+            
+            public static void Main()
+            {
+              public class ProgramTwelve
+              {
+                const int a=2;
+                int b=int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter a Value :");
+                Console.WriteLine("The Incremented Value is {0}",b);
+                b+=a;
+              }
+            }
+                      
+                        </code></pre>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="tab-pane container fade" id="inc">
+          <h1>Increment/Decrement Operator
+          </h1>
+          <p>Use case in creating real world Employee ID</p>
+          <div class="container">
+            <h5> Q16: Program to display the Concept of Increment/Decrement Operator
+              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
+            </h5>
+            <div class="card " id="read">
+              <div class="card-body">
+                <pre><code>
+        using System;
+
+        class ProgramFour
+        {
+          public static void Main()
+          {
+            int a=85,b=0;
+            Console.WriteLine(a);
+            Console.WriteLine(a++);
+            Console.WriteLine(b);
+            Console.WriteLine(++b);
+          } 
+        }
+            </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-javascript.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
     crossorigin="anonymous"></script>
+  <!-- <script src="myscripts.js"></script> -->
+
 </body>
 
 </html>
