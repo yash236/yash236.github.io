@@ -26,7 +26,7 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="mylogo.png" alt="" class="logo">
@@ -76,7 +76,7 @@
 
   <!-- <div class="container"> -->
   <div class="row">
-    <div class="col-2 bg-dark nav-pills" style="height: 100vh; overflow-y: scroll;">
+    <div class="col-2 bg-dark nav-pills" style="height: 100vh;  overflow-y: scroll;">
       <ul class="nav flex-column">
         <li class="nav-item">
           <a class="nav-link link-secondary active" href="#dotNet" data-bs-toggle="tab">DotNet</a>
@@ -299,7 +299,7 @@
           <div class="container">
             <h5> Q4: Program to display A Number given by User using concatanation
               and Placeholder Syntax
-              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#read" >Show/Hide</button>
             </h5>
             <div class="card collapse" id="read">
               <div class="card-body">
@@ -340,100 +340,85 @@
           </ol>
 
 
-          <div class="container">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title">Q5: Program to show Min and Max Value of integral DataType?
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                        using System;
 
-                        public class ProgramFive
-                        {
-                          public static void Main()
-                          {
-                            Console.WriteLine("Min value of sbyte : {0} ", sbyte.MinValue);
-                            Console.WriteLine("Max value of sbyte : {0} ", sbyte.MaxValue);
-                            
-                            Console.WriteLine("Min value of byte : {0} ", byte.MinValue);
-                            Console.WriteLine("Max value of byte : {0} ", byte.MaxValue);
-                          
-                            Console.WriteLine("Min value of short : {0} ", short.MinValue);
-                            Console.WriteLine("Max value of short : {0} ", short.MaxValue);
-                              
-                            Console.WriteLine("Min value of ushort : {0} ", ushort.MinValue);
-                            Console.WriteLine("Max value of ushort : {0} ", ushort.MaxValue);
-                              
-                            Console.WriteLine("Min value of int : {0} ", int.MinValue);
-                            Console.WriteLine("Max value of int : {0} ", int.MaxValue);
-                              
-                            Console.WriteLine("Min value of uint : {0} ", uint.MinValue);
-                            Console.WriteLine("Max value of uint : {0} ", uint.MaxValue);
-                          }
-                        }
-                          </code></pre>
-                  </div>
-                </form>
+
+          <div class="container">
+            <h5> Q5: Program to show Min and Max Value of integral DataType?
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#min" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="min">
+              <div class="card-body">
+                <pre><code>
+                  using System;
+
+                  public class ProgramFive
+                  {
+                    public static void Main()
+                    {
+                      Console.WriteLine("Min value of sbyte : {0} ", sbyte.MinValue);
+                      Console.WriteLine("Max value of sbyte : {0} ", sbyte.MaxValue);
+                      
+                      Console.WriteLine("Min value of byte : {0} ", byte.MinValue);
+                      Console.WriteLine("Max value of byte : {0} ", byte.MaxValue);
+                    
+                      Console.WriteLine("Min value of short : {0} ", short.MinValue);
+                      Console.WriteLine("Max value of short : {0} ", short.MaxValue);
+                        
+                      Console.WriteLine("Min value of ushort : {0} ", ushort.MinValue);
+                      Console.WriteLine("Max value of ushort : {0} ", ushort.MaxValue);
+                        
+                      Console.WriteLine("Min value of int : {0} ", int.MinValue);
+                      Console.WriteLine("Max value of int : {0} ", int.MaxValue);
+                        
+                      Console.WriteLine("Min value of uint : {0} ", uint.MinValue);
+                      Console.WriteLine("Max value of uint : {0} ", uint.MaxValue);
+                    }
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
-
 
         </div>
         <div class="tab-pane container fade" id="boolean">
           <h1>Boolean datatype</h1>
-          <div class="container">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title"> Q6: Program to check the Gratest or smallest of two number using
-                  Boolean DatType?
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                        using System;
 
-                        public class ProgramSix
-                        {
-                          public static void Main()
-                          {
-                            Console.WriteLine("Enter 1st Number: ");
-                            int num1=int.Parse(Console.ReadLine());
-                            Console.WriteLine("Enter 2nd Number: ");
-                            int num2=int.Parse(Console.ReadLine());
-                              
-                            bool isGreater=num1>num2;
-                            if(isGreater)
-                            {
-                              Console.WriteLine("The Values of 1st number {0} is greater than 2nd number {1}",num1,num2);
-                            }
-                            else
-                            {
-                              Console.WriteLine("The Values of 1st number {0} is smaller than 2nd number {1}",num1,num2);
-                            }
-                          }
-                        }
-                          </code></pre>
-                  </div>
-                </form>
+
+
+          <div class="container">
+            <h5>Q6: Program to check the Gratest or smallest of two number using
+              Boolean DatType?
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#isGreater" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="isGreater">
+              <div class="card-body">
+                <pre><code>
+                  using System;
+
+                  public class ProgramSix
+                  {
+                    public static void Main()
+                    {
+                      Console.WriteLine("Enter 1st Number: ");
+                      int num1=int.Parse(Console.ReadLine());
+                      Console.WriteLine("Enter 2nd Number: ");
+                      int num2=int.Parse(Console.ReadLine());
+                        
+                      bool isGreater=num1>num2;
+                      if(isGreater)
+                      {
+                        Console.WriteLine("The Values of 1st number {0} is greater than 2nd number {1}",num1,num2);
+                      }
+                      else
+                      {
+                        Console.WriteLine("The Values of 1st number {0} is smaller than 2nd number {1}",num1,num2);
+                      }
+                    }
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
           <h3>Float, Decimal, Double</h3>
           <p>
             Float takes 4 bytes space and it can take up 8 character of limit
@@ -451,44 +436,35 @@
 
 
 
-          <div class="container">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title"> Q6.1: Program to see the precision in Float, Decimal and Double data
-                  Type.
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                        using System;
 
-                        public class ProgramSeven
-                        {
-                          public static void Main()	
-                          {
-                            float a=552.94564745f;
-                            Console.WriteLine(a);
-                  
-                            double d=52.945647455294564745d;
-                            Console.WriteLine(d);
-                  
-                            decimal x=52.945647455294564745945647455294564745M;
-                            Console.WriteLine(x);
-                          }
-                        }
-                          </code></pre>
-                  </div>
-                </form>
-              </div>
+          <div class="container">
+          <h5>Q6.1: Program to see the precision in Float, Decimal and Double data
+            Type.
+            <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#float" >Show/Hide</button>
+          </h5>
+          <div class="card collapse" id="float">
+            <div class="card-body">
+              <pre><code>
+                using System;
+
+                public class ProgramSeven
+                {
+                  public static void Main()	
+                  {
+                    float a=552.94564745f;
+                    Console.WriteLine(a);
+          
+                    double d=52.945647455294564745d;
+                    Console.WriteLine(d);
+          
+                    decimal x=52.945647455294564745945647455294564745M;
+                    Console.WriteLine(x);
+                  }
+                }
+          </code></pre>
             </div>
           </div>
-
-
-
-
-
+        </div>
         </div>
         <div class="tab-pane container fade" id="string">
           <h1>String</h1>
@@ -512,38 +488,39 @@
           </p>
 
 
-          <div class="container">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title"> Q7:Program to illustrate the difference b/w Escape and Verbal
-                  Literal.
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                        using System;
 
-                        public class ProgramSeven
-                        {
-                          public static void Main()
-                          {
-                            Console.WriteLine("\"Welcome to C#\"");
-                            Console.WriteLine("\'Welcome to C#\'");
-                            Console.WriteLine("\\Welcome to C#\\");
-                            Console.WriteLine("\tWelcome to C#");
-                            Console.WriteLine("One \nTwo \nThree");
-                            Console.WriteLine("C:\\Users\\Aman\\Desktop\\Celebal\\CSharp\\Programs\\CSharpNotesWithSaurav");
-                            Console.WriteLine(@"C:\Users\Aman\Desktop\Celebal\CSharp\Programs\CSharpNotesWithSaurav");
-                          }
-                        }
-                          </code></pre>
-                  </div>
-                </form>
+
+          <div class="container">
+            <h5>Q7:Program to illustrate the difference b/w Escape and Verbal
+              Literal.
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#literal" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="literal">
+              <div class="card-body">
+                <pre><code>
+                  using System;
+
+                  public class ProgramSeven
+                  {
+                    public static void Main()
+                    {
+                      Console.WriteLine("\"Welcome to C#\"");
+                      Console.WriteLine("\'Welcome to C#\'");
+                      Console.WriteLine("\\Welcome to C#\\");
+                      Console.WriteLine("\tWelcome to C#");
+                      Console.WriteLine("One \nTwo \nThree");
+                      Console.WriteLine("C:\\Users\\Aman\\Desktop\\Celebal\\CSharp\\Programs\\CSharpNotesWithSaurav");
+                      Console.WriteLine(@"C:\Users\Aman\Desktop\Celebal\CSharp\Programs\CSharpNotesWithSaurav");
+                    }
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
+
+
+
+
 
 
         </div>
@@ -559,52 +536,44 @@
             in Explicit Uses Convert class and Parse method we can typecast.
           </p>
 
-          <div class="container">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title"> Q8: Program to Demonstrate the Use of Implicit and Explicit
-                  Converion Type also by using Parse and convert method.
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                        using System;
 
-                        public class ProgramEight
-                        {
-                          public static void Main()
-                          {
-                            int x=25;
-                            float y=x;
-                            Console.WriteLine("Implicit Convertion From int {0} to float {1} is : {2} Result in No DataLoss",x,y,y);
-              
-                            float a=396.856f;
-                            int b=(int)a;
-                            Console.WriteLine("Explicit Convertion From Float {0} to int {1} is : {2} Result in DataLoss",a,b,b);
-              
-                            float c=96.78f;
-                            int d=Convert.ToInt32(c);
-                            Console.WriteLine("Using Convert class Convertion From Float {0} to int {1} is : {2} Result in DataLoss",c,d,d);
-              
-                            string e="56";
-                            int f=int.Parse(e);
-                            Console.WriteLine("Using Parse class Convertion From string {0} to int {1} is : {2} Result in DataLoss",e,f,f);
-                          }
-                        }
-                        
-                          </code></pre>
-                  </div>
-                </form>
+
+
+          <div class="container">
+            <h5>Q8: Program to Demonstrate the Use of Implicit and Explicit
+              Converion Type also by using Parse and convert method.
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramEight" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="ProgramEight">
+              <div class="card-body">
+                <pre><code>
+                  using System;
+
+                  public class ProgramEight
+                  {
+                    public static void Main()
+                    {
+                      int x=25;
+                      float y=x;
+                      Console.WriteLine("Implicit Convertion From int {0} to float {1} is : {2} Result in No DataLoss",x,y,y);
+        
+                      float a=396.856f;
+                      int b=(int)a;
+                      Console.WriteLine("Explicit Convertion From Float {0} to int {1} is : {2} Result in DataLoss",a,b,b);
+        
+                      float c=96.78f;
+                      int d=Convert.ToInt32(c);
+                      Console.WriteLine("Using Convert class Convertion From Float {0} to int {1} is : {2} Result in DataLoss",c,d,d);
+        
+                      string e="56";
+                      int f=int.Parse(e);
+                      Console.WriteLine("Using Parse class Convertion From string {0} to int {1} is : {2} Result in DataLoss",e,f,f);
+                    }
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
-
-
-
-
-
 
         </div>
 
@@ -620,40 +589,29 @@
             We can use Access specifier with const keyword also
           </p>
 
+
+
           <div class="container">
-            <div class="card custom-card">
+            <h5>Q9: Program to demonstrate the Const keyword use.
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramNine" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="ProgramNine">
               <div class="card-body">
-                <h5 class="card-title"> Q9: Program to demonstrate the Const keyword use.
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                        using System;
-                        public class ProgramNine
-                        {
-                          public static void Main()
-                          {
-                            const double pi=3.14;
-                            int r=2;
-                            Console.WriteLine("Area of Circle with radius {0} is :{1}",r,pi*r*r);
-                          } 
-                        }
-                        
-                          </code></pre>
-                  </div>
-                </form>
+                <pre><code>
+                  using System;
+                  public class ProgramNine
+                  {
+                    public static void Main()
+                    {
+                      const double pi=3.14;
+                      int r=2;
+                      Console.WriteLine("Area of Circle with radius {0} is :{1}",r,pi*r*r);
+                    } 
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
         </div>
 
         <div class="tab-pane container fade" id="datetime">
@@ -779,37 +737,31 @@
             </tbody>
           </table>
 
+
+
           <div class="container">
-            <div class="card custom-card">
+            <h5> Q10: Program to demonstrate the use of Date Time Format
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramTen" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="ProgramTen">
               <div class="card-body">
-                <h5 class="card-title"> Q10: Program to demonstrate the use of Date Time Format
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                            using System;
-                            public class ProgramTen
-                            {
-                              public static void Main()
-                              {
-                                Console.WriteLine("{0:dd}",dt);
-                                DateTime dt=DateTime.Now;
-                                Console.WriteLine("{0:dd-MMM-yyyy:mmm}",dt);
-                                Console.WriteLine("{0:MMM}",dt);//month
-            
-                              }
-                            }
-                            
-                              </code></pre>
-                  </div>
-                </form>
+                <pre><code>
+                  using System;
+                  public class ProgramTen
+                  {
+                    public static void Main()
+                    {
+                      Console.WriteLine("{0:dd}",dt);
+                      DateTime dt=DateTime.Now;
+                      Console.WriteLine("{0:dd-MMM-yyyy:mmm}",dt);
+                      Console.WriteLine("{0:MMM}",dt);//month
+  
+                    }
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
-
-
 
 
 
@@ -835,42 +787,43 @@
           <h1>Arithmetic</h1>
           <p>Signs used in Arithmetic Operators are: +,-,*,/,=,%</p>
 
-          <div class="container">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title">Q12: Program to demonstrate the use of Arithmetic Operator.
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-            using System;
 
-            public static void Main()
-            {
-              public class ProgramTwelve
-              {
-                o=a+b;
-                int a=2,b=6,o,p,q,r,s;
-                q=a*b;
-                p=a-b;
-                s=a%b;
-                r=a/b;
-                Console.WriteLine("Diff of a {0} and b {1} is : {2}",a,b,p);
-                Console.WriteLine("Sum of a {0} and b {1} is : {2}",a,b,o);
-                Console.WriteLine("Division of a {0} and b {1} is : {2}",a,b,r);
-                Console.WriteLine("Multiplication of a {0} and b {1} is : {2}",a,b,q);
-                Console.WriteLine("Modulus of a {0} and b {1} is : {2}",a,b,s);
-              }
-            }
-            
-              </code></pre>
-                  </div>
-                </form>
+
+          <div class="container">
+            <h5> Q12: Program to demonstrate the use of Arithmetic Operator.
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramTwelve" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="ProgramTwelve">
+              <div class="card-body">
+                <pre><code>
+                  using System;
+
+                  public static void Main()
+                  {
+                    public class ProgramTwelve
+                    {
+                      o=a+b;
+                      int a=2,b=6,o,p,q,r,s;
+                      q=a*b;
+                      p=a-b;
+                      s=a%b;
+                      r=a/b;
+                      Console.WriteLine("Diff of a {0} and b {1} is : {2}",a,b,p);
+                      Console.WriteLine("Sum of a {0} and b {1} is : {2}",a,b,o);
+                      Console.WriteLine("Division of a {0} and b {1} is : {2}",a,b,r);
+                      Console.WriteLine("Multiplication of a {0} and b {1} is : {2}",a,b,q);
+                      Console.WriteLine("Modulus of a {0} and b {1} is : {2}",a,b,s);
+                    }
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
+
+
+
+
+
 
 
 
@@ -885,45 +838,43 @@
         <div class="tab-pane container fade" id="relational">
           <h1>Relational</h1>
           <p>Signs used in Relational Operators are: !,==,&lt;,>, &lt;=, >=,!=,===</p>
-          <div class="container">
-            <div class="card custom-card">
-              <div class="card-body">
-                <h5 class="card-title">Q13: Program to demonstrate the use of Relational Operator.
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                      using System;
 
-                      public static void Main()
-                      {
-                        public class ProgramTwelve
-                        {
-                          Console.WriteLine("Enter 1st Number:");
-                          int a=int.Parse(Console.ReadLine());
-                          Console.WriteLine("Enter 2nd Number:");
-                          int b=int.Parse(Console.ReadLine());
-                          if(a>b){
-                            Console.WriteLine("1st value {0} is Greater than 2nd value {1}",a,b);
-                          }
-                          else if(a&lt; b){
-                            Console.WriteLine("1st value {0} is Lesser than 2nd value {1}",a,b);
-                          }
-                          else{
-                            Console.WriteLine("1st value {0} is Equal to 2nd value {1}",a,b);
-                          }
-                      
-                        }
+
+
+          <div class="container">
+            <h5> Q13: Program to demonstrate the use of Relational Operator.
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramThirteen" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="ProgramThirteen">
+              <div class="card-body">
+                <pre><code>
+                  using System;
+
+                  public static void Main()
+                  {
+                    public class ProgramThirteen
+                    {
+                      Console.WriteLine("Enter 1st Number:");
+                      int a=int.Parse(Console.ReadLine());
+                      Console.WriteLine("Enter 2nd Number:");
+                      int b=int.Parse(Console.ReadLine());
+                      if(a>b){
+                        Console.WriteLine("1st value {0} is Greater than 2nd value {1}",a,b);
                       }
-                      
-                        </code></pre>
-                  </div>
-                </form>
+                      else if(a&lt; b){
+                        Console.WriteLine("1st value {0} is Lesser than 2nd value {1}",a,b);
+                      }
+                      else{
+                        Console.WriteLine("1st value {0} is Equal to 2nd value {1}",a,b);
+                      }
+                  
+                    }
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
+
         </div>
 
 
@@ -934,45 +885,42 @@
 
 
           <div class="container">
-            <div class="card custom-card">
+            <h5> Q14: Program to demonstrate the use of Logical Operator.
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramFourteen" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="ProgramFourteen">
               <div class="card-body">
-                <h5 class="card-title">Q14: Program to demonstrate the use of Logical Operator.
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                      using System;
+                <pre><code>
+                  using System;
                 
-                          public static void Main()
-                          {
-                            public class ProgramTwelve
-                            {
-                              Console.WriteLine("Enter 1st Number:");
-                              Console.WriteLine("Enter 2nd Number:");
-                              int a=int.Parse(Console.ReadLine());
-                              Console.WriteLine("Enter 3rd Number:");
-                              int b=int.Parse(Console.ReadLine());
-                              if(a>b && a>c){
-                                Console.WriteLine("1st value {0} is Greater",a);
-                                int c=int.Parse(Console.ReadLine());
-                              }
-                              else if(b>a && b>c){
-                                Console.WriteLine("2nd value {0} is greater",b);
-                              }
-                              else{
-                                Console.WriteLine("3rd value {0} is greater",c);
-                              }
-                              
-                            }
-                          }
-                        </code></pre>
-                  </div>
-                </form>
+                  public static void Main()
+                  {
+                    public class ProgramFourteen
+                    {
+                      Console.WriteLine("Enter 1st Number:");
+                      Console.WriteLine("Enter 2nd Number:");
+                      int a=int.Parse(Console.ReadLine());
+                      Console.WriteLine("Enter 3rd Number:");
+                      int b=int.Parse(Console.ReadLine());
+                      if(a>b && a>c){
+                        Console.WriteLine("1st value {0} is Greater",a);
+                        int c=int.Parse(Console.ReadLine());
+                      }
+                      else if(b>a && b>c){
+                        Console.WriteLine("2nd value {0} is greater",b);
+                      }
+                      else{
+                        Console.WriteLine("3rd value {0} is greater",c);
+                      }
+                      
+                    }
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
+
+
 
 
 
@@ -984,38 +932,30 @@
           <h1>Assignment Operator</h1>
 
 
-
           <div class="container">
-            <div class="card custom-card">
+            <h5>Q15: Program to demonstrate the use of Arithmetic Operator.
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramFifteen" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="ProgramFifteen">
               <div class="card-body">
-                <h5 class="card-title">Q15: Program to demonstrate the use of Arithmetic Operator.
-                  <button type="button" class="btn btn-outline-success" onclick="toggleCode()">Show/Hide</button>
-                </h5>
-                <form>
-                  <div class="form-group">
-                    <label for="code">Code:</label>
-                    <pre><code class="language-sharp" id="code">
-                      using System;
+                <pre><code>
+                  using System;
             
-            public static void Main()
-            {
-              public class ProgramTwelve
-              {
-                const int a=2;
-                int b=int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter a Value :");
-                Console.WriteLine("The Incremented Value is {0}",b);
-                b+=a;
-              }
-            }
-                      
-                        </code></pre>
-                  </div>
-                </form>
+                  public static void Main()
+                  {
+                    public class ProgramFifteen
+                    {
+                      const int a=2;
+                      int b=int.Parse(Console.ReadLine());
+                      Console.WriteLine("Enter a Value :");
+                      Console.WriteLine("The Incremented Value is {0}",b);
+                      b+=a;
+                    }
+                  }
+            </code></pre>
               </div>
             </div>
           </div>
-
 
 
         </div>
@@ -1023,68 +963,98 @@
           <h1>Increment/Decrement Operator
           </h1>
           <p>Use case in creating real world Employee ID</p>
+
+
+
           <div class="container">
-            <h5> Q16: Program to display the Concept of Increment/Decrement Operator
-              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
+            <h5>Q15: Program to demonstrate the use of Arithmetic Operator.
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramFifteen" >Show/Hide</button>
             </h5>
-            <div class="card " id="read">
+            <div class="card collapse" id="ProgramFifteen">
               <div class="card-body">
                 <pre><code>
-        using System;
-
-        class ProgramFour
-        {
-          public static void Main()
-          {
-            int a=85,b=0;
-            Console.WriteLine(a);
-            Console.WriteLine(a++);
-            Console.WriteLine(b);
-            Console.WriteLine(++b);
-          } 
-        }
+                  using System;
+            
+                  public static void Main()
+                  {
+                    public class ProgramFifteen
+                    {
+                      const int a=2;
+                      int b=int.Parse(Console.ReadLine());
+                      Console.WriteLine("Enter a Value :");
+                      Console.WriteLine("The Incremented Value is {0}",b);
+                      b+=a;
+                    }
+                  }
             </code></pre>
               </div>
             </div>
           </div>
-        </div>
 
 
 
+          <div class="container">
+            <h5> Q16: Program to display the Concept of Increment/Decrement Operator
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramSixteen" >Show/Hide</button>
+            </h5>
+            <div class="card collapse" id="ProgramSixteen">
+              <div class="card-body">
+                <pre><code>
+                  using System;
+
+                  class ProgramSixteen
+                  {
+                    public static void Main()
+                    {
+                      int a=85,b=0;
+                      Console.WriteLine(a);
+                      Console.WriteLine(a++);
+                      Console.WriteLine(b);
+                      Console.WriteLine(++b);
+                    } 
+                  }
+            </code></pre>
+              </div>
+            </div>
+          </div>
+          </div>
         <div class="tab-pane container fade" id="ternary">
           <h1>Ternary & Conditional Operator
           </h1>
+
+
+
           <div class="container">
-            <h5> Q17: Program to display the Concept of Increment/Decrement Operator
-              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
+            <h5>Q17: Program to display the Concept of Increment/Decrement Operator
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramSeventeen" >Show/Hide</button>
             </h5>
-            <div class="card " id="read">
+            <div class="card collapse" id="ProgramSeventeen">
               <div class="card-body">
                 <pre><code>
-        using System;
+                  using System;
 
-        class ProgramFour
-        {
-          public static void Main()
-          {
-            Console.WriteLine("Enter your Age:");
-		int a = int.Parse(Console.ReadLine());
-		if(a>=18){
-			Console.WriteLine("You are Eligible for giving Vote");
-		}
-		else{
-			Console.WriteLine("You are not Eligible for giving Vote");
-		}
-
-		string EligibleToVote=a>=18?"You are eligible for vote":"Not Eligible";
-		Console.WriteLine(EligibleToVote);
-          } 
-        }
+                  class ProgramSeventeen
+                  {
+                    public static void Main()
+                    {
+                      Console.WriteLine("Enter your Age:");
+              int a = int.Parse(Console.ReadLine());
+              if(a>=18){
+                Console.WriteLine("You are Eligible for giving Vote");
+              }
+              else{
+                Console.WriteLine("You are not Eligible for giving Vote");
+              }
+          
+              string EligibleToVote=a>=18?"You are eligible for vote":"Not Eligible";
+              Console.WriteLine(EligibleToVote);
+                    } 
+                  }
             </code></pre>
               </div>
             </div>
           </div>
-        </div>
+          </div>
 
 
 
@@ -1115,90 +1085,98 @@
             (Simple if)
           </h1>
           <div class="container">
-            <h5> Q19: Program to display the Concept of Selection Statement.
-              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
+            <h5>Q19: Program to display the Concept of Selection Statement.
+              <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramNineteen" >Show/Hide</button>
             </h5>
-            <div class="card " id="read">
+            <div class="card collapse" id="ProgramNineteen">
               <div class="card-body">
                 <pre><code>
-        using System;
+                  using System;
 
-        class ProgramFour
-        {
-          public static void Main()
-          {
-            Console.WriteLine("Enter UserName:");
-		string user=Console.ReadLine();
-		Console.WriteLine("Enter a Password:");
-		string pass=Console.ReadLine();
-		if(user=="amangn12" && pass=="1234"){
-			Console.WriteLine("Login Successfull");
-		}
-		else{
-			Console.WriteLine("Please Try Again");
-		}
-          } 
-        }
+                  class ProgramNineteen
+                  {
+                    public static void Main()
+                    {
+                      Console.WriteLine("Enter your Percentage:");
+              int percent=int.Parse(Console.ReadLine());
+              if(percent>=90){
+                Console.WriteLine("A+");
+              }
+              else if(percent>=80){
+                Console.WriteLine("B+");
+              }
+              else if(percent>=70){
+                Console.WriteLine("C+");
+              }
+              else if(percent>=60){
+                Console.WriteLine("D+");
+              }
+              else if(percent>=50){
+                Console.WriteLine("E+");
+              }
+              else if(percent>=40){
+                Console.WriteLine("F+");
+              }
+              else{
+                Console.WriteLine("Fail");
+              }
+                    } 
+                  }
             </code></pre>
               </div>
             </div>
           </div>
-        </div>
-
-
-        <div class="tab-pane container fade" id="ifelse">
-          <h1>If else if
-          </h1>
-          <div class="container">
-            <h5> Q19: Program to display the Concept of if else if.
-              <a href="#read" class="btn btn-outline-success" data-toggle="collapse">Show/Hide</a>
-            </h5>
-            <div class="card " id="read">
-              <div class="card-body">
-                <pre><code>
-        using System;
-
-        class ProgramFour
-        {
-          public static void Main()
-          {
-            Console.WriteLine("Enter your Percentage:");
-		int percent=int.Parse(Console.ReadLine());
-		if(percent>=90){
-			Console.WriteLine("A+");
-		}
-		else if(percent>=80){
-			Console.WriteLine("B+");
-		}
-		else if(percent>=70){
-			Console.WriteLine("C+");
-		}
-		else if(percent>=60){
-			Console.WriteLine("D+");
-		}
-		else if(percent>=50){
-			Console.WriteLine("E+");
-		}
-		else if(percent>=40){
-			Console.WriteLine("F+");
-		}
-		else{
-			Console.WriteLine("Fail");
-		}
-          } 
-        }
-            </code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
       </div>
+
+
+
+      <div class="tab-pane container fade" id="ifelse">
+        <h1>If else if
+        </h1>
+        <div class="container">
+          <h5>Q20: Program to display the Concept of If ELse if.
+            <button  class="btn btn-outline-success" data-bs-toggle="collapse"  data-bs-target="#ProgramNineteen" >Show/Hide</button>
+          </h5>
+          <div class="card collapse" id="ProgramNineteen">
+            <div class="card-body">
+              <pre><code>
+                using System;
+
+                public class ProgramTwenty{
+                  public static void Main(){
+                    Console.WriteLine("Enter your Percentage:");
+                    int percent=int.Parse(Console.ReadLine());
+                    if(percent>=90){
+                      Console.WriteLine("A+");
+                    }
+                    else if(percent>=80){
+                      Console.WriteLine("B+");
+                    }
+                    else if(percent>=70){
+                      Console.WriteLine("C+");
+                    }
+                    else if(percent>=60){
+                      Console.WriteLine("D+");
+                    }
+                    else if(percent>=50){
+                      Console.WriteLine("E+");
+                    }
+                    else if(percent>=40){
+                      Console.WriteLine("F+");
+                    }
+                    else{
+                      Console.WriteLine("Fail");
+                    }
+                  }
+                }
+          </code></pre>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
